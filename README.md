@@ -1,2 +1,6 @@
-# fechadura_digital-sm
+# **Fechadura digital**
+
 Projeto final da disciplina de SISTEMAS MICROPROCESSADOS - TI0144.
+
+### **Equipe**
+VITOR MATEUS COSTA ALVES - KEVEN DA SILVA GONÇALVES - ANTÔNIO FELYPE FERREIRA MACIEL 
