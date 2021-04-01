@@ -1,0 +1,97 @@
+Divisão do projeto final
+
+1. Hardware:
+  (ambiente de simulação utilizado será o Proteus)
+
+  (Keven) 1.1 Divisão dos componentes:
+    - Componentes nativos do simulador;
+    - Componentes importados (bibliotecas);
+    - Contar e coletar os nomes dos componentes(e/ou especificações);
+    - Criar um relatório com todos os componentes utilizados.
+
+    1.1.1 Número limitado de pinos:
+      - Escolher primeiro os componentes essencias, como teclado, display, etc.
+      - Contar o número de pinos utilizados por eles.
+      - Verificar a possibilidade de utilizar todos os demais componentes, como
+        leds, terminal virtual, comunicação serial, etc.
+
+  (Vitor) 1.2 Configuração do microcontrolador no STMCube
+    - Apenas configurar os pinos (código vem depois).
+ 
+  (Felype) 1.3 Configuração do projeto (Proteus)
+    - Organização dos componentes (deixar bonito kkkkk)
+    - Ligações dos fios e etc.
+
+2. Software:
+  (Keven e Felype) 2.1 Menu:
+      2.1.1 Exibição no Menu:
+      - Criação do Menu (texto mesmo);
+      - Apresentar o Menu no display;
+      - Como saber qual opção foi escolhida pelo usuário?
+      2.1.1.1 Limitação do display:
+        'O display é 20x4, 4 linhas e 20 colunas. Como vamos exibir opções, precisamos de
+        um ponteiro para indicar a opção selecionada. Além disso, caso a mensagem seja
+        extensa, precisamos fazer com que ela seja atualizada, e 'caminhe' pela linha, até o
+        final da opção, e ainda fazer com que as opções desçam e subam.'
+        
+        Exemplo:
+
+        linha/coluna  1                  20   
+          1           ~=~=~=~ Menu ~=~=~=~
+          2           1. Opção maluca     
+          3           2. Voadora de x     
+          4           3. Hora do show po < (Mensagem extensa)
+
+          ~ linha atualizando (u.t - unidade de tempo)
+
+          4     3. Hora do show po < 
+          1 u.t
+          4     3. ora do show por <
+          1 u.t
+          4     3. ra do show porr <
+          1 u.t
+          4     3. a do show porra <
+
+          'Caso o usuário permaneça na mesma opção, ela deve reiniciar do começo da mensagem'
+
+          ~ menu descendo
+         
+          linha/coluna  1                  20   
+          1             1. Opção maluca    
+          2             2. Voadora de x    
+          3             3. Hora do show po 
+          4             4. Explodir tudo   <
+
+  (Vitor) 2.2 Comunição com o computador:
+    - Fazer a comunicação entre simulador e computador;
+    2.2.1 Criar um padrão para as atividades do sistema:
+      - Primeiro acesso ao sistema (fechadura nova)
+      - 'Login' (com data, hora, usuário)
+      - Erros (digitaram a senha errada. salvar data, hora, e etc.) 
+      - Restaurar para padrão de fábrica (limpar o sistema, log e tals. Em seguida, começar um novo log com o primeiro acesso e tals)
+      - Resumo da ópera: fazer o registro de todas as atividades.
+
+  (Keven) 2.3 Comunição com o terminal:
+    - Criar um 'biblioteca' para fazer a conversão das informações (número, char, strings, etc.)
+    'O padrão das informações apresentadas pelo terminal é o da tabela ASCii, e as informações devem
+    ser codificadas em hexadecimal.' 
+    - Além de (é claro) enviar as informações para o terminal
+    - Fazer o mesmo que foi feito para a comunicação com o computador, mas agora, apresentar,
+    'ao vivo'.
+
+  (Felype e Vitor) 2.4 Implementação do teclado:
+    - Criação da nossa implementação do teclado.
+    'Teclado utilizado é 4x4. Utilizar as teclas extras (que não são números) para manipular o menu e etc.'
+    'O Proteus permite a customização do teclado (deixar bonitinho kkkkkkk).'
+
+3. Documentação:
+  (Keven) 3.1 Organização dos arquivos do projeto:
+    - Divisão de pastas e outros.
+
+  (Vitor e Felype) 3.2 Criação da Documentação do projeto:
+    - Funções utilizadas (criadas e tals);
+    - Bibliografia (vai que né kkkkk);
+    - Resumão do funcionamento;
+      'Explicação sobre o funcionamento da fechadura.'
+    - Componentes e tals;
+    - DOCUMENTAÇÃO :o
