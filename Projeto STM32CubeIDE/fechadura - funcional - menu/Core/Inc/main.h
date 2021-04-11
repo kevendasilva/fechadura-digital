@@ -74,6 +74,12 @@ void Error_Handler(void);
 #define KOut1_GPIO_Port GPIOA
 #define KOut2_Pin GPIO_PIN_7
 #define KOut2_GPIO_Port GPIOA
+#define Led_open_Pin GPIO_PIN_0
+#define Led_open_GPIO_Port GPIOB
+#define Led_locked_Pin GPIO_PIN_1
+#define Led_locked_GPIO_Port GPIOB
+#define Btn_locked_Pin GPIO_PIN_2
+#define Btn_locked_GPIO_Port GPIOB
 #define KOut3_Pin GPIO_PIN_8
 #define KOut3_GPIO_Port GPIOA
 #define KOut4_Pin GPIO_PIN_9
@@ -86,6 +92,8 @@ void Error_Handler(void);
 #define KIn3_GPIO_Port GPIOA
 #define KIn4_Pin GPIO_PIN_13
 #define KIn4_GPIO_Port GPIOA
+#define Atuador_Pin GPIO_PIN_15
+#define Atuador_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

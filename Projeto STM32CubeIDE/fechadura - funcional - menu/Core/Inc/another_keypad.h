@@ -3,10 +3,11 @@
 #ifndef ANOTHER_KEYPAD_H_
 #define ANOTHER_KEYPAD_H_
 
-void setColumn(int column);
-void setNumber(int row, int column);
-void keypadLoop();
-int readRow(int row);
+void setColumn (int column);
+void setNumber (int row, int column);
+int readRow (int row);
+int keypadLoopF ();
+int keypadLoopO ();
 
 
 #endif /* ANOTHER_KEYPAD_H_ */

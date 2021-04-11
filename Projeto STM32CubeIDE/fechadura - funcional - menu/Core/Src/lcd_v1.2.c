@@ -73,7 +73,7 @@ void lcd_escreve_instrucao(char instr)
 
 void lcd_posicao_do_cursor(char lin, char col)
 {
-	char addr;
+	unsigned char addr;
 	  switch(lin)
 	  {
 	     case 0: addr = 0x00; break; 	// Primeira Linha
@@ -83,7 +83,7 @@ void lcd_posicao_do_cursor(char lin, char col)
 	     default: ;
 	  }
 
-	  addr +=col;
+	  addr += col;
 
 	  lcd_escreve_instrucao(0x80 | addr);
 }
@@ -157,7 +157,9 @@ void lcd_proxima_linha(int numeroOpcao, int linhaAnterior)
 	lcd_escreve_string("<\r");
 
 }
+
 int tecla[2];
+
 void lcd_escolhe_tela(int numeroOpcao)
 {
 	switch (numeroOpcao)

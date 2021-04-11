@@ -1,6 +1,5 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
 ################################################################################
 
 -include ../makefile.init
@@ -29,12 +28,6 @@ endif
 
 -include ../makefile.defs
 
-OPTIONAL_TOOL_DEPS := \
-$(wildcard ../makefile.defs) \
-$(wildcard ../makefile.init) \
-$(wildcard ../makefile.targets) \
-
-
 BUILD_ARTIFACT_NAME := fechadura_digital
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX := 
@@ -61,22 +54,22 @@ all: main-build
 main-build: fechadura_digital.elf secondary-outputs
 
 # Tool invocations
-fechadura_digital.elf: $(OBJS) $(USER_OBJS) F:\Downloads\ do\ SSD\smp\fechadura\ -\ funcional\ 2.0\ -\ Copia\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "fechadura_digital.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"F:\Downloads do SSD\smp\fechadura - funcional 2.0 - Copia\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="fechadura_digital.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+fechadura_digital.elf: $(OBJS) $(USER_OBJS) C:\Users\Numbuh\ Tw\Documents\fechadura_digital-sm\old\fechadura\ -\ funcional\ -\ menu\STM32F103C6TX_FLASH.ld
+	arm-none-eabi-gcc -o "fechadura_digital.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Numbuh Tw\Documents\fechadura_digital-sm\old\fechadura - funcional - menu\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="fechadura_digital.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+default.size.stdout: $(EXECUTABLES)
 	arm-none-eabi-size  $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-fechadura_digital.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+fechadura_digital.list: $(EXECUTABLES)
 	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "fechadura_digital.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-fechadura_digital.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+fechadura_digital.bin: $(EXECUTABLES)
 	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "fechadura_digital.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
