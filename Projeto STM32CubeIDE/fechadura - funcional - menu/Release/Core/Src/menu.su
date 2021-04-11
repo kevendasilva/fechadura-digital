@@ -4,5 +4,5 @@ menu.c:34:6:menuPassword	8	static
 menu.c:44:6:menuPasswordFail	8	static
 menu.c:52:6:menu1	8	static
 menu.c:59:6:menu2	8	static
-menu.c:69:6:menu3	0	static
-menu.c:76:6:menu4	8	static
+menu.c:69:6:menu3	8	static
+menu.c:76:6:menuE	8	static

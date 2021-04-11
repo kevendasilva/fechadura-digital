@@ -176,15 +176,12 @@ int main(void)
 			  // Registro dos usuários
 
 			  menu3();
-			  break;
-		  case 4:
-			  // Restaurando a fechadura para o padrão de fábrica
-
-			  menu4();
 			  terminalResetPassword();
 			  HAL_Delay(200);
 			  senha = 1234;
 			  break;
+		  default:
+			  menuE();
 		  }
 
 	  }

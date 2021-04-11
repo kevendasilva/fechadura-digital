@@ -21,13 +21,13 @@ void menuMain ()
 	lcd_escreve_string("Success!\r");
 	HAL_Delay(1000);
 	lcd_posicao_do_cursor(0, 0);
-	lcd_escreve_string("1. Open the door\r");
+	lcd_escreve_string("~=~=~=~ Menu ~=~=~=~\r");
 	lcd_posicao_do_cursor(1, 0);
-	lcd_escreve_string("2. Change Password\r");
+	lcd_escreve_string("1. Open the door\r");
 	lcd_posicao_do_cursor(2, 0);
-	lcd_escreve_string("3. System Log\r");
+	lcd_escreve_string("2. Change Password\r");
 	lcd_posicao_do_cursor(3, 0);
-	lcd_escreve_string("4. Reset Settings\r");
+	lcd_escreve_string("3. Reset to default\r");
 }
 
 
@@ -70,13 +70,14 @@ void menu3 ()
 {
 	lcd_limpa_display();
 	lcd_posicao_do_cursor(0, 0);
-	lcd_escreve_string("Open door!\r");
+	lcd_escreve_string("Password changed!\r");
 }
 
-void menu4 ()
+void menuE ()
 {
 	lcd_limpa_display();
 	lcd_posicao_do_cursor(0, 0);
-	lcd_escreve_string("Password changed!\r");
+	lcd_escreve_string("Invalid option!\r");
 }
+
 
