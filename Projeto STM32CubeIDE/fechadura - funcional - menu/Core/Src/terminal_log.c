@@ -1,6 +1,8 @@
 #include "terminal_log.h"
 #include <string.h>
 #include "stm32f1xx_hal.h"
+#include <stdio.h>
+#include <math.h>
 
 UART_HandleTypeDef huart1;
 
@@ -69,8 +71,7 @@ void terminalPasswordLog(int senha, int unlocked)
 
 	// Mensagem caso usuário tente entrar
 	terminalPrintNL(2);
-	terminalPrint("Attempt to unlock the door with the password: 1111");
-
+	terminalPrint( "Attempt to unlock the door with the password.");
 
 	if (unlocked)
 	{

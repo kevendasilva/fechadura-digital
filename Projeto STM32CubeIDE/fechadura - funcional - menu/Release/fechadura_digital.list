@@ -7,23 +7,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   1 .text         000015cc  0800010c  0800010c  0001010c  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       00000304  080016d8  080016d8  000116d8  2**2
+  2 .rodata       00000300  080016d8  080016d8  000116d8  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM.extab    00000000  080019dc  080019dc  0002000c  2**0
+  3 .ARM.extab    00000000  080019d8  080019d8  0002000c  2**0
                   CONTENTS
-  4 .ARM          00000000  080019dc  080019dc  0002000c  2**0
+  4 .ARM          00000000  080019d8  080019d8  0002000c  2**0
                   CONTENTS
-  5 .preinit_array 00000000  080019dc  080019dc  0002000c  2**0
+  5 .preinit_array 00000000  080019d8  080019d8  0002000c  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  6 .init_array   00000004  080019dc  080019dc  000119dc  2**2
+  6 .init_array   00000004  080019d8  080019d8  000119d8  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  7 .fini_array   00000004  080019e0  080019e0  000119e0  2**2
+  7 .fini_array   00000004  080019dc  080019dc  000119dc  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  8 .data         0000000c  20000000  080019e4  00020000  2**2
+  8 .data         0000000c  20000000  080019e0  00020000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  9 .bss          00000060  2000000c  080019f0  0002000c  2**2
+  9 .bss          00000060  2000000c  080019ec  0002000c  2**2
                   ALLOC
- 10 ._user_heap_stack 00000604  2000006c  080019f0  0002006c  2**0
+ 10 ._user_heap_stack 00000604  2000006c  080019ec  0002006c  2**0
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  0002000c  2**0
                   CONTENTS, READONLY
@@ -1015,7 +1015,7 @@ Disassembly of section .text:
  8000ac4:	f7ff ffdc 	bl	8000a80 <terminalPrint>
  8000ac8:	3401      	adds	r4, #1
  8000aca:	e7f7      	b.n	8000abc <terminalPrintNL+0x8>
- 8000acc:	080019b5 	.word	0x080019b5
+ 8000acc:	080019b0 	.word	0x080019b0
 
 08000ad0 <terminalPrintInit>:
  8000ad0:	b538      	push	{r3, r4, r5, lr}
@@ -1063,12 +1063,12 @@ Disassembly of section .text:
  8000b4c:	4806      	ldr	r0, [pc, #24]	; (8000b68 <terminalPrintInit+0x98>)
  8000b4e:	f7ff bf97 	b.w	8000a80 <terminalPrint>
  8000b52:	bf00      	nop
- 8000b54:	080018de 	.word	0x080018de
- 8000b58:	08001906 	.word	0x08001906
- 8000b5c:	0800192e 	.word	0x0800192e
- 8000b60:	08001956 	.word	0x08001956
- 8000b64:	0800197e 	.word	0x0800197e
- 8000b68:	080019a6 	.word	0x080019a6
+ 8000b54:	080018d9 	.word	0x080018d9
+ 8000b58:	08001901 	.word	0x08001901
+ 8000b5c:	08001929 	.word	0x08001929
+ 8000b60:	08001951 	.word	0x08001951
+ 8000b64:	08001979 	.word	0x08001979
+ 8000b68:	080019a1 	.word	0x080019a1
 
 08000b6c <terminalPasswordLog>:
  8000b6c:	b510      	push	{r4, lr}
@@ -1088,8 +1088,8 @@ Disassembly of section .text:
  8000b94:	e7f7      	b.n	8000b86 <terminalPasswordLog+0x1a>
  8000b96:	bf00      	nop
  8000b98:	0800188c 	.word	0x0800188c
- 8000b9c:	080018bf 	.word	0x080018bf
- 8000ba0:	080018cf 	.word	0x080018cf
+ 8000b9c:	080018ba 	.word	0x080018ba
+ 8000ba0:	080018ca 	.word	0x080018ca
 
 08000ba4 <terminalResetPassword>:
  8000ba4:	b508      	push	{r3, lr}
@@ -1100,7 +1100,7 @@ Disassembly of section .text:
  8000bb2:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
  8000bb6:	2002      	movs	r0, #2
  8000bb8:	f7ff bf7c 	b.w	8000ab4 <terminalPrintNL>
- 8000bbc:	080019b8 	.word	0x080019b8
+ 8000bbc:	080019b3 	.word	0x080019b3
 
 08000bc0 <terminalPasswordChanged>:
  8000bc0:	b508      	push	{r3, lr}
@@ -1144,7 +1144,7 @@ Disassembly of section .text:
  8000c06:	f000 fd2f 	bl	8001668 <__libc_init_array>
  8000c0a:	f7ff fcf7 	bl	80005fc <main>
  8000c0e:	4770      	bx	lr
- 8000c10:	080019e4 	.word	0x080019e4
+ 8000c10:	080019e0 	.word	0x080019e0
  8000c14:	20000000 	.word	0x20000000
  8000c18:	2000000c 	.word	0x2000000c
  8000c1c:	2000000c 	.word	0x2000000c
@@ -2247,10 +2247,10 @@ Disassembly of section .text:
  800169a:	4798      	blx	r3
  800169c:	3501      	adds	r5, #1
  800169e:	e7f2      	b.n	8001686 <__libc_init_array+0x1e>
- 80016a0:	080019dc 	.word	0x080019dc
- 80016a4:	080019dc 	.word	0x080019dc
- 80016a8:	080019dc 	.word	0x080019dc
- 80016ac:	080019e0 	.word	0x080019e0
+ 80016a0:	080019d8 	.word	0x080019d8
+ 80016a4:	080019d8 	.word	0x080019d8
+ 80016a8:	080019d8 	.word	0x080019d8
+ 80016ac:	080019dc 	.word	0x080019dc
 
 080016b0 <memset>:
  80016b0:	4603      	mov	r3, r0

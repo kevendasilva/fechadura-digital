@@ -1,6 +1,6 @@
-terminal_log.c:7:6:terminalPrint	24	static
-terminal_log.c:27:6:terminalPrintNL	16	static
-terminal_log.c:39:6:terminalPrintInit	16	static
-terminal_log.c:67:6:terminalPasswordLog	8	static
-terminal_log.c:88:6:terminalResetPassword	8	static
-terminal_log.c:94:6:terminalPasswordChanged	8	static
+terminal_log.c:9:6:terminalPrint	24	static
+terminal_log.c:29:6:terminalPrintNL	16	static
+terminal_log.c:41:6:terminalPrintInit	16	static
+terminal_log.c:69:6:terminalPasswordLog	8	static
+terminal_log.c:89:6:terminalResetPassword	8	static
+terminal_log.c:95:6:terminalPasswordChanged	8	static

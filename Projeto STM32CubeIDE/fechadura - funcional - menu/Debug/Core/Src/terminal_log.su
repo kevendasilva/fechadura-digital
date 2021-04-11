@@ -1,0 +1,6 @@
+terminal_log.c:8:6:terminalPrint	24	static
+terminal_log.c:28:6:terminalPrintNL	24	static
+terminal_log.c:40:6:terminalPrintInit	8	static
+terminal_log.c:68:6:terminalPasswordLog	80	static
+terminal_log.c:93:6:terminalResetPassword	8	static
+terminal_log.c:99:6:terminalPasswordChanged	8	static

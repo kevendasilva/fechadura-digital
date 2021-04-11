@@ -54,8 +54,8 @@ all: main-build
 main-build: fechadura_digital.elf secondary-outputs
 
 # Tool invocations
-fechadura_digital.elf: $(OBJS) $(USER_OBJS) C:\Users\Numbuh\ Tw\Documents\fechadura_digital-sm\old\fechadura\ -\ funcional\ -\ menu\STM32F103C6TX_FLASH.ld
-	arm-none-eabi-gcc -o "fechadura_digital.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Numbuh Tw\Documents\fechadura_digital-sm\old\fechadura - funcional - menu\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="fechadura_digital.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+fechadura_digital.elf: $(OBJS) $(USER_OBJS) C:\Users\Numbuh\ Tw\Documents\fechadura_digital-sm\Projeto\ STM32CubeIDE\fechadura\ -\ funcional\ -\ menu\STM32F103C6TX_FLASH.ld
+	arm-none-eabi-gcc -o "fechadura_digital.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Numbuh Tw\Documents\fechadura_digital-sm\Projeto STM32CubeIDE\fechadura - funcional - menu\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="fechadura_digital.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
