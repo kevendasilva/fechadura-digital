@@ -31,18 +31,29 @@ Para a interação entre o sistema e o usuário, foi utilizado um teclado matric
 n x Jumpers/Fios  
 3 x Led (Azul, Verde, Vermelho)  
 3 x Resistor 330 Ohm 1/16W 5%  
-1 x Potenciômetro 1K Ohm  
 1 x Display LCD 20x4 LM044L  
 1 x Teclado de membrana matricial 4x4  
 1 x Fonte de alimentação  
 
 Componentes do simulador (exclusivos do ambiente virtual):
 
-1 x COMPIM  
 1 x Terminal virtual
 
 ### Apresentação do projeto no YouTube: 
 
+
+## Arquivos
+
+* [Divisão do trabalho](Divisão%20do%20trabalho/divisao.txt)
+* [Projeto Proteus](https://github.com/kevensilvag/fechadura_digital-sm/tree/main/Projeto%20Proteus)
+* [Projeto STM32CubeIDE](https://github.com/kevensilvag/fechadura_digital-sm/tree/main/Projeto%20STM32CubeIDE/fechadura%20-%20funcional%20-%20menu)
+* [Proposta](https://github.com/kevensilvag/fechadura_digital-sm/tree/main/Proposta)
+* [Diagrama de blocos](diagrama.jpg)
+
+
 ## **Referências**
 
 https://www.theengineeringprojects.com/2013/05/how-to-use-virtual-terminal-in-proteus.html
+https://github.com/delpitec/STM32
+
+
