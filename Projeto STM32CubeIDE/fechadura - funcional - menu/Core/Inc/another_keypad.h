@@ -4,7 +4,6 @@
 #define ANOTHER_KEYPAD_H_
 
 void setColumn (int column);
-void setNumber (int row, int column);
 int readRow (int row);
 int keypadLoopF ();
 int keypadLoopO ();

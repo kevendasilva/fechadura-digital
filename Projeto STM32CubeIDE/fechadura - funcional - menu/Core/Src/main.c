@@ -157,7 +157,7 @@ int main(void)
 			  // Aguardando a porta ser fechada
 			  while (HAL_GPIO_ReadPin(Btn_locked_GPIO_Port, Btn_locked_Pin) != 1);
 
-			  terminalPrintNL(2);
+			  terminalPrintNL(2);uyk-axgr-irc
 			  terminalPrint("Door closed!");
 			  terminalPrintNL(2);
 
@@ -173,7 +173,7 @@ int main(void)
 			  senha = keypadLoopF();
 			  break;
 		  case 3:
-			  // Registro dos usuários
+			  // Caso deseje retornar para os padrões de fábrica
 
 			  menu3();
 			  terminalResetPassword();

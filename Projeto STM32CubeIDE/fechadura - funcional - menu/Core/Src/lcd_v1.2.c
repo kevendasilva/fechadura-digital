@@ -110,7 +110,8 @@ void lcd_20x4_4bits_Init(void)        			 // Comunicação de 4 bits, display de
 	lcd_escreve_instrucao(0x01);                // Limpa a tela do display e desloca para posi��o 1x1
 }    
 
-void lcd_escreve_instrucao_Init(char opcode){
+void lcd_escreve_instrucao_Init(char opcode)
+{
 
 	// Posiciona os bits da varíavel de entrada nos pinos de saída (apenas 4 bits são enviados)
 	Output_D7_PIN(opcode & 0x80);
@@ -144,15 +145,6 @@ void lcd_limpa_linha(int i)
 void lcd_limpa_display(void)
 {
     lcd_escreve_instrucao(0x01);            // Limpa a tela do display e desloca para posição 0x0
-}
-
-void lcd_proxima_linha(int numeroOpcao, int linhaAnterior)
-{
-	lcd_posicao_do_cursor(linhaAnterior, 8);
-	lcd_escreve_string(" \r");
-	lcd_posicao_do_cursor(numeroOpcao, 8);
-	lcd_escreve_string("<\r");
-
 }
 
 void lcd_escreve_string(char* c){

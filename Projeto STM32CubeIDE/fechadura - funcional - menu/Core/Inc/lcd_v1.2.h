@@ -3,6 +3,4 @@ void lcd_posicao_do_cursor(char lin, char col); // posição do cursor na tela
 void lcd_limpa_linha(int i);					//apaga o último caractere
 void lcd_limpa_display(void);		              // limpar o display + pos. l0 c0
 void lcd_proxima_linha(int numeroOpcao, int linhaAnterior);
-void lcd_escolhe_tela(int numeroOpcao);
-void lcd_tela1();
 void lcd_escreve_string(char *c); 		          // escreve uma string de dados de caracteres até receber \r

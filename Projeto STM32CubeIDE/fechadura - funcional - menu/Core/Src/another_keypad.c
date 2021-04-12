@@ -17,37 +17,6 @@ int readRow (int row)
 	return (int) HAL_GPIO_ReadPin(GPIOA, row);
 }
 
-void setNumber (int row, int column)
-{
-	char element[4][4][2] = {{"7\r","8\r","9\r","A\r"},
-							 {"4\r","5\r","6\r","B\r"},
-							 {"1\r","2\r","3\r","C\r"},
-							 {"*\r","0\r","#\r","D\r"}};
-
-	if ((row == 1) && (column == 3))
-	{
-		numeroOpcao++;
-		if (numeroOpcao == 4)
-		{
-			numeroOpcao = 0;
-			linhaAnterior = 3;
-		}
-		else
-		{
-			linhaAnterior = numeroOpcao - 1;
-		}
-		lcd_proxima_linha(numeroOpcao, linhaAnterior);
-	}
-	else if ((row == 3) && (column == 3))
-	{
-		lcd_escolhe_tela(numeroOpcao);
-	}
-	else
-	{
-		lcd_escreve_string(element[row][column]);
-	}
-}
-
 int keypadLoopO ()
 {
 	int key;
@@ -76,7 +45,6 @@ int keypadLoopO ()
 	  HAL_Delay(150);
 	  return key;
 }
-
 
 int keypadLoopF ()
 {

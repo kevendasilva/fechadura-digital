@@ -1,5 +1,4 @@
 another_keypad.c:7:6:setColumn	0	static
 another_keypad.c:12:5:readRow	8	static
-another_keypad.c:20:6:setNumber	56	static
 another_keypad.c:51:5:keypadLoopO	64	static
 another_keypad.c:81:5:keypadLoopF	96	static
