@@ -1,5 +1,5 @@
-   #include "main.h"
-   #include "lcd_v1.2.h"
+#include "main.h"
+#include "lcd_v1.2.h"
 
    // Configura os pinos de saída
    #define Output_RS_PIN(state) HAL_GPIO_WritePin(LCD_RS_GPIO_Port, LCD_RS_Pin, state)
@@ -40,8 +40,6 @@ void lcd_escreve_dado(char dado)
     HAL_Delay(2);
 
 }
-
-
 
 void lcd_escreve_instrucao(char instr)
 {
@@ -110,7 +108,6 @@ void lcd_20x4_4bits_Init(void)        			 // Comunicação de 4 bits, display de
 	lcd_escreve_instrucao(0x0C);              // Desliga o cursor, caso deseja deixar ligado, comentar essa linha
 
 	lcd_escreve_instrucao(0x01);                // Limpa a tela do display e desloca para posi��o 1x1
- 
 }    
 
 void lcd_escreve_instrucao_Init(char opcode){
@@ -156,50 +153,6 @@ void lcd_proxima_linha(int numeroOpcao, int linhaAnterior)
 	lcd_posicao_do_cursor(numeroOpcao, 8);
 	lcd_escreve_string("<\r");
 
-}
-
-int tecla[2];
-
-void lcd_escolhe_tela(int numeroOpcao)
-{
-	switch (numeroOpcao)
-	{
-		case 0:
-			lcd_tela1();
-			break;
-		case 1:
-			lcd_limpa_display();
-			lcd_escreve_string("SEI LA\r");
-			break;
-		case 2:
-			lcd_limpa_display();
-			lcd_escreve_string("911\r");
-			break;
-		case 3:
-			lcd_limpa_display();
-			lcd_posicao_do_cursor(0,10);
-			lcd_escreve_string("Registros\r");
-			lcd_posicao_do_cursor(1,0);
-			lcd_escreve_string("1234-19:13-10/04/21\r");
-			lcd_posicao_do_cursor(2,0);
-			lcd_escreve_string("4321-19:14-10/04/21\r");
-			lcd_posicao_do_cursor(3,0);
-			lcd_escreve_string("Retorne\r");
-/*
-			tecla = keypadLoopF();
-			for (int i=0; i < tecla.size; i++)
-			{
-
-			}
-*/
-			break;
-		}
-}
-
-void lcd_tela1()
-{
-	lcd_limpa_display();
-	lcd_escreve_string("VC ESCOLHEU A OP 1\r");
 }
 
 void lcd_escreve_string(char* c){
