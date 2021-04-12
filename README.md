@@ -44,7 +44,7 @@ Componentes do simulador (exclusivos do ambiente virtual):
 
 ### Apresentação do projeto no YouTube:  
 
-youtube.com/watch?v=mNk99XxqirA
+<youtube.com/watch?v=mNk99XxqirA>
 
 ## Arquivos
 
