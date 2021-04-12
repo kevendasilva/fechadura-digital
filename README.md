@@ -49,6 +49,7 @@ Componentes do simulador (exclusivos do ambiente virtual):
 * [Projeto STM32CubeIDE](https://github.com/kevensilvag/fechadura_digital-sm/tree/main/Projeto%20STM32CubeIDE/fechadura%20-%20funcional%20-%20menu)
 * [Proposta](https://github.com/kevensilvag/fechadura_digital-sm/tree/main/Proposta)
 * [Diagrama de blocos](diagrama.jpg)
+* [Esquemático](fechadura_digital_Esquemático.png)
 
 
 ## **Referências**
