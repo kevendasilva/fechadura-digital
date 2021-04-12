@@ -44,7 +44,7 @@ Componentes do simulador (exclusivos do ambiente virtual):
 
 ### Apresentação do projeto no YouTube:  
 
-<youtube.com/watch?v=mNk99XxqirA>
+youtube.com/watch?v=mNk99XxqirA
 
 ## Arquivos
 
@@ -57,9 +57,9 @@ Componentes do simulador (exclusivos do ambiente virtual):
 
 ## **Referências**
 
-https://www.theengineeringprojects.com/2013/05/how-to-use-virtual-terminal-in-proteus.html
-https://www.theengineeringprojects.com/2015/06/serial-port.html
-www.youtube.com/watch?v=6C83ViSAYfk
-https://github.com/delpitec/STM32
+https://www.theengineeringprojects.com/2013/05/how-to-use-virtual-terminal-in-proteus.html  
+https://www.theengineeringprojects.com/2015/06/serial-port.html  
+www.youtube.com/watch?v=6C83ViSAYfk  
+https://github.com/delpitec/STM32  
 
 
