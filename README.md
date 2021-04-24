@@ -4,9 +4,9 @@ Projeto Final da Disciplina de Sistemas Microprocessados - TI0144.
 
 ### **Equipe**  
 
-Antonio Felype Ferreira Maciel - 472118
-Keven da Silva Gonçalves - 473982
-Vitor Mateus Costa Alves - 470879
+Antonio Felype Ferreira Maciel - 472118  
+Keven da Silva Gonçalves - 473982  
+Vitor Mateus Costa Alves - 470879  
 
 ## Sobre  
 
